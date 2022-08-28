@@ -1,0 +1,112 @@
+/* 
+    Base CSS:  
+        + Using for common CSS for Page (needed)
+        + Using to construct the base of Web Page
+        + Can easily change something when needed
+*/
+
+/* Import font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+/* Reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* html */
+html {
+    font-size: 62.5%; /* Set for all size of CSS as 10px */
+    font-family: Lato, Consolas, "Courier New", monospace;
+    scroll-behavior: smooth;
+}
+
+/* Body */
+body {
+    font-size: 1em; /* Using this for size of all CSS as default 10px */
+}
+
+/* Common CSS */
+.row {
+    margin-left: -0.8rem;
+    margin-right: -0.8rem;
+}
+
+.row::after,
+#header::after,
+#header__nav-list::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.column {
+    float: left;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+}
+
+.column-third {
+    width: calc(100% / 3);
+}
+
+.column-half {
+    width: calc(100% / 2);
+}
+
+/* app */
+#app {
+    background-color: #edede9;
+}
+
+/* Header */
+#header {
+    height: 4.65rem;
+    background-color: #000;
+    box-shadow: 0 0 1.5rem rgba(255, 255, 255, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+/* Slider */
+#slider {
+    position: relative;
+    padding-top: 50%; /* Because div (slider) has width: 100%; --> padding-top: 50%; of the width root element */
+    margin-top: 4.65rem;
+    background-image: url('../images/chicago.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center;
+}
+
+/* Container & content */
+/* #container {
+    Do not do anything yet
+} */
+        /* Content header */
+.content {
+    width: 80rem;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 6.4rem 1.6rem;
+}
+
+.content__header {
+    text-align: center;
+}
+
+/* Footer */
+#footer {
+    font-size: 2.4rem;
+    padding: 6.4rem 1.6rem;
+    text-align: center;
+}
+
+/* clear: using for float property */
+.clear {
+    clear: both;
+}

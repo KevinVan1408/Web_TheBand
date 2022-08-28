@@ -1,0 +1,134 @@
+/* All break-point in media query is not affected by font-size in html tag */
+
+/* Tablet and mobile */
+@media only screen and (max-width: 63.9375em) {
+        /* Header */
+    .header__subnav-list-item a {
+        padding: 1.5rem 1.6rem;
+    }
+
+        /* Slider */
+    .slider__text-content-desc,
+    .slider__text-content-heading {
+        text-shadow: 0 0 0.6rem #000;
+    }
+
+        /* Content 2 */
+    .places-item__info-btn,
+    #content__contact-form-submit {
+        padding: 1.4rem 1.5rem;
+    }
+
+        /* Content 3 */
+    .content__contact-info-item {
+        margin-bottom: 2rem;
+    }
+
+    .content__contact-form-control {
+        padding: 1.5rem;
+    }
+
+        /* Footer */
+    .footer-social__list-item a {
+        font-size: 3rem;
+    }
+}
+
+/* Mobile */
+@media only screen and (max-width: 46.1875em) {
+        /* Header */
+    #header {
+        overflow: hidden;
+    }
+
+    #header__nav {
+        display: block;
+    }
+
+    .header__nav-list-item:first-child {
+        display: inline-block;
+    }
+    
+
+    .header__nav-list-item {
+        float: none;
+    }
+
+    .header__nav-list-item:nth-child(2),
+    .header__nav-list-item:nth-child(3),
+    .header__nav-list-item:nth-child(4),
+    .header__nav-list-item:last-child {
+        border-bottom: 1px solid #ccc;
+    }
+
+    .header__nav-list-item:nth-child(2) > a,
+    .header__nav-list-item:nth-child(3) > a,
+    .header__nav-list-item:nth-child(4) > a,
+    .header__nav-list-item:last-child > a {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .header__subnav-list {
+        position: static;
+        background-color: #333;
+    }
+
+    .header__subnav-list-item a {
+        color: #fff;
+        padding: 2rem 4.1rem;
+    }
+
+    #header__search {
+        display: none;
+    }
+
+    #header__menu {
+        display: block;
+    }
+        /* Content 1 */
+    .profile-item {
+        width: 100%;
+    }
+
+    .profile-item__img {
+        width: 60%;
+    }
+
+        /* Content 2 */
+    .places-item {
+        width: 100%;
+    }
+
+        /* Content 3 */
+    #content__contact-info,
+    #content__contact-form {
+        width: 100%;
+    }
+
+    #content__contact-info {
+      margin-bottom: 2.6rem;  
+    }
+    
+    .content__contact-info-item {
+        margin-bottom: 3rem;
+    }
+
+    .content__contact-form-full-mobile {
+        width: 100%;
+    }
+
+    .content__contact-form-margin-mobile {
+        margin-bottom: 0.8rem;
+    }
+
+    .places-item__info-btn,
+    #content__contact-form-submit {
+        width: 100%;
+        font-size: 1.7rem;
+    }
+
+    .footer-social__list-item a {
+        font-size: 2.7rem;
+    }
+}
